@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
+@@include('_head.html',{
+"title":"binary"
+})
 
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+<body>
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <main class="page">
+            <div class="mainblock">
+                <div class="mainblock__content _container">
+                    <a href="" class="mainblock__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="mainblock__text">
+                        <div class="mainblock__title">Clear, smart, attractive design</div>
+                        <div class="mainblock__subtitle">for your app, logo, website</div>
+                    </div>
+                    <div class="mainblock__footer">
+                        <a href="" class="mainblock__btn btn_w">READ MORE</a>
+                        <a href="" class="mainblock__arrow"></a>
+                    </div>
+                </div>
+                <div class="mainblock__image ibg">
+                    <img src="img/mainblock/bg.jpg" alt="">
+                </div>
+            </div>
+            <div class="block__content"></div>
+        </main>
+        @@include('_footer.html',{})
+    </div>
+    @@include('_popup.html',{})
+    @@include('_js.html',{})
+</body>
+
 </html>
