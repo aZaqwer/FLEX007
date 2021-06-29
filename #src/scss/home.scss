@@ -2,11 +2,9 @@
 //====================================================================================================
 .mainblock {
     min-height: 100vh;
-    flex: 1 1 auto;
     position: relative;
     display: flex;
     justify-content: center;
-    // align-items: center;
     text-align: center;
     padding: 50px 0px;
     @media screen and (max-width: $md3+px), screen and (max-height: 600px) {
@@ -85,6 +83,9 @@
 
     &__btn {
         margin: 0px 0px 60px 0px;
+        @media screen and (max-width: $md3+px), screen and (max-height: 600px) {
+            margin: 0px 0px 30px 0px;
+        }
     }
 
     // .mainblock__arrow
@@ -110,10 +111,71 @@
         top: 0;
     }
     50% {
-        top: 20px;
+        top: 10px;
     }
     100% {
         top: 0;
+    }
+}
+
+//====================================================================================================
+.block {
+    // .block__content
+
+    &__content {
+    }
+}
+
+//====================================================================================================
+
+.menu {
+    padding: 22px 0px;
+    @media (max-width: $md4+px) {
+        padding: 22px 0px 12px 0px;
+    }
+    // .menu__items
+
+    &__items {
+    }
+
+    // .menu__list
+
+    &__list {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            margin: 0px 25px;
+            @media (max-width: $md3+px) {
+                margin: 0px 15px 10px 15px;
+            }
+            @media (max-width: $md3+px) {
+                flex: 0 1 25%;
+            }
+        }
+        @media (max-width: $md4+px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    // .menu__link
+
+    &__link {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #3c3c3c;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: #ada074;
+        }
+        &-act {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #ada074;
+        }
     }
 }
 
