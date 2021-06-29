@@ -123,6 +123,8 @@
     // .block__content
 
     &__content {
+        background-color: #fff;
+        z-index: 50;
     }
 }
 
@@ -130,6 +132,18 @@
 
 .menu {
     padding: 22px 0px;
+    border-bottom: 1px solid #f2f2f2;
+    &_mb {
+        margin: 0px 0px 130px 0px;
+    }
+    @media (max-width: $md2+px) {
+        margin: 0px 0px 50px 0px;
+    }
+
+    @media (max-width: $md3+px) {
+        margin: 0px 0px 30px 0px;
+    }
+
     @media (max-width: $md4+px) {
         padding: 22px 0px 12px 0px;
     }
@@ -176,6 +190,104 @@
             font-weight: 700;
             color: #ada074;
         }
+    }
+}
+
+//====================================================================================================
+
+.about {
+    padding: 0px 0px 60px 0px;
+    @media (max-width: $md3+px) {
+        padding: 0px 0px 10px 0px;
+    }
+    // .about__headerblock
+
+    &__header-block {
+        margin: 0px 0px 65px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    // .about__body
+
+    &__body {
+        text-align: center;
+        max-width: 900px;
+        margin: 0px auto;
+    }
+
+    // .about__row
+
+    &__row {
+        display: flex;
+        margin: 0px -15px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
+    }
+
+    // .about__column
+
+    &__column {
+        margin: 0px 0px 30px 0px;
+        flex: 0 1 33.33333%;
+        padding: 0px 15px;
+    }
+
+    // .about__item
+
+    &__item {
+        text-align: center;
+        max-width: 260px;
+        @media (max-width: $md3+px) {
+            max-width: none;
+        }
+    }
+
+    // .about__icon
+
+    &__icon {
+        border-radius: 50%;
+        border: 1px solid #f2f2f2;
+        width: 92px;
+        height: 92px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 40px 0px;
+        &-l {
+            padding: 0px 0px 0px 5px;
+        }
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 15px 0px;
+        }
+    }
+
+    // .about__title
+
+    &__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #000000;
+        margin: 0px 0px 33px 0px;
+        @media (max-width: $md2+px) {
+            font-size: 18px;
+            margin: 0px 0px 25px 0px;
+        }
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 15px 0px;
+        }
+    }
+
+    // .about__text
+
+    &__text {
+        color: #868585;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
     }
 }
 
