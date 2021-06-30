@@ -396,3 +396,132 @@
 }
 
 //====================================================================================================
+
+.partners {
+    background: url("../img/partners/bg.jpg") center / cover no-repeat;
+    padding: 100px 0px 70px 0px;
+    @media (max-width: $md3+px) {
+        padding: 30px 0px 0px 0px;
+    }
+    // .partners__title
+
+    &__title {
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+        margin: 0px 0px 90px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 30px 0px;
+        }
+    }
+
+    // .partners__items
+
+    &__items {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    // .partners__column
+
+    &__column {
+        padding: 0px 50px;
+        margin: 0px 0px 70px 0px;
+        @media (max-width: $md3+px) {
+            padding: 0px 30px;
+        }
+    }
+
+    // .partners__item
+
+    &__item {
+    }
+}
+//====================================================================================================
+.contacts {
+    // .contacts__header-block
+
+    &__header-block {
+    }
+
+    // .contacts__body
+
+    &__body {
+    }
+
+    // .contacts__column
+
+    &__column {
+    }
+
+    // .contacts__form
+
+    &__form {
+    }
+
+    // .contacts__content
+
+    &__content {
+    }
+
+    // .contacts__text
+
+    &__text {
+    }
+
+    // .contacts__name
+
+    &__name {
+    }
+
+    // .contacts__social
+
+    &__social {
+    }
+
+    // .contacts__email
+
+    &__email {
+    }
+}
+
+.header-block {
+    // .header-block__title
+
+    &__title {
+    }
+}
+.form-contacts {
+    // .form-contacts__row
+
+    &__row {
+    }
+
+    // .form-contacts__column
+
+    &__column {
+    }
+
+    // .form-contacts__input
+
+    &__input {
+    }
+
+    // .form-contacts__label
+
+    &__label {
+    }
+}
+.input {
+}
+.social {
+    // .social__item
+
+    &__item {
+    }
+}
+//====================================================================================================
