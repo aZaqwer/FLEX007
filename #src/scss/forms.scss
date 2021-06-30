@@ -43,6 +43,13 @@
             background-color: #fff;
         }
     }
+    &_b {
+        border: 1px solid #000;
+        color: #000;
+        &::after {
+            background-color: #000;
+        }
+    }
 
     span {
         position: relative;
@@ -52,6 +59,9 @@
         &:hover {
             &.btn_w {
                 color: #000;
+            }
+            &.btn_b {
+                color: #fff;
             }
             &::after {
                 transform: scale(1);

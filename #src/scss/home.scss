@@ -292,3 +292,69 @@
 }
 
 //====================================================================================================
+.portfolio {
+    background-color: #f3f3f3;
+    padding: 105px 0px 60px 0px;
+    // .portfolio__header-block
+
+    &__header-block {
+        margin: 0px 0px 50px 0px;
+    }
+
+    // .portfolio__filter
+
+    &__filter {
+    }
+
+    // .portfolio__items
+
+    &__items {
+    }
+
+    // .portfolio__column
+
+    &__column {
+    }
+
+    // .portfolio__item
+
+    &__item {
+    }
+
+    // .portfolio__footer
+
+    &__footer {
+    }
+
+    // .portfolio__btn
+
+    &__btn {
+    }
+}
+
+.filter {
+    // .filter__list
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .filter__item
+
+    &__item {
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #3c3c3c;
+        text-transform: uppercase;
+        margin: 0px 25px;
+        cursor: pointer;
+        &._active {
+            color: #ada074;
+        }
+    }
+}
+
+//====================================================================================================
