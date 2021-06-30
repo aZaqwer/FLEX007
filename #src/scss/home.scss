@@ -444,23 +444,29 @@
 //====================================================================================================
 .contacts {
     // .contacts__header-block
-
+    padding: 180px 0px 0px 0px;
     &__header-block {
+        margin: 0px 0px 120px 0px;
     }
 
     // .contacts__body
 
     &__body {
+        display: flex;
+        margin: 0px -15px;
     }
 
     // .contacts__column
 
     &__column {
+        flex: 0 1 50%;
+        padding: 0px 25px;
     }
 
     // .contacts__form
 
     &__form {
+        text-align: left;
     }
 
     // .contacts__content
@@ -489,13 +495,13 @@
     }
 }
 
-.header-block {
-    // .header-block__title
-
-    &__title {
-    }
-}
 .form-contacts {
+    // .form-contacts__body
+    &__body {
+        display: inline-block;
+        width: 100%;
+        max-width: 385px;
+    }
     // .form-contacts__row
 
     &__row {
@@ -519,9 +525,11 @@
 .input {
 }
 .social {
+    display: flex;
     // .social__item
 
     &__item {
+        margin: 0px 15px 0px 0px;
     }
 }
 //====================================================================================================
